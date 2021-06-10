@@ -16,6 +16,6 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npx --package @angular/cli@^11 ng build @siren-js/ng
-      - run: npx --package @angular/cli@^11 ng test @siren-js/ng
+      - run: npx --package @angular/cli@^11 ng test @siren-js/ng --browsers=ChromeHeadless
       - run: npx --package @angular/cli@^11 ng lint @siren-js/ng
       - run: npx codecov
