@@ -1,0 +1,6 @@
+<div [formGroup]="formGroup">
+  <div>{{ labelText }}:</div>
+  <select [formControlName]="field.name">
+    <option *ngFor="let option of options; index as i" [value]="i">{{ option.title }}</option>
+  </select>
+</div>

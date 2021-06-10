@@ -1,0 +1,7 @@
+<div [formGroup]="formGroup">
+  <div>{{ labelText }}:</div>
+  <label *ngFor="let button of buttons; index as i">
+    <input type="radio" [value]="i" [formControlName]="field.name" />
+    {{ button.title }}
+  </label>
+</div>

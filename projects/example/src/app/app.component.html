@@ -1,0 +1,6 @@
+<div *ngIf="entity">
+  <h1>{{entity.title}}</h1>
+  <div *ngFor="let action of actions">
+    <app-action-form [action]="action"></app-action-form>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<h3>{{ action.title }}</h3>
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <div *ngFor="let field of fields">
+    <app-input-control
+      [field]="field"
+      [formGroup]="formGroup"
+    ></app-input-control>
+  </div>
+  <button [disabled]="!formGroup.valid">Submit</button>
+</form>
+<pre>{{ action | json }}</pre>
