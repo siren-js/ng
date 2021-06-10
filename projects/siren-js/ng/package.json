@@ -1,0 +1,13 @@
+{
+  "name": "@siren-js/ng",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^11.2.14",
+    "@angular/core": "^11.2.14",
+    "@angular/forms": "^11.2.14",
+    "@siren-js/core": "*"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
