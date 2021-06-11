@@ -6,7 +6,7 @@ import { ControlComponent } from '../control.component';
   templateUrl: './select-control.component.html',
 })
 export class SelectControlComponent extends ControlComponent {
-  get options() {
+  get options(): any[] {
     return this.field.options as any[];
   }
 }

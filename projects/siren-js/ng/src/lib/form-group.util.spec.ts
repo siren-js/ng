@@ -62,6 +62,7 @@ describe('actionToFormGroup()', () => {
 
     const { controls } = actionToFormGroup(action);
 
+    // tslint:disable-next-line:no-non-null-assertion
     for (const { name } of action.fields!) {
       expect(controls[name]).toBeDefined();
     }

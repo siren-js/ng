@@ -34,6 +34,7 @@ function radioButtonFormControl(field: Field): FormControl {
     ? field.group.findIndex((button) => button.checked)
     : -1;
   const control = new FormControl(checkedIndex);
+  // tslint:disable-next-line:no-shadowed-variable
   control.valueChanges.subscribe((checkedIndex) => {
     if (Array.isArray(field.group)) {
       field.group.forEach((button, index) => {
@@ -52,7 +53,7 @@ function selectFormControl(field: Field): FormControl {
       field.options.forEach((option, index) => {
         option.selected = Array.isArray(value)
           ? value.includes(index)
-          : index == value;
+          : index === Number.parseInt(value);
       });
     }
   });

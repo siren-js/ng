@@ -6,7 +6,7 @@ import { ControlComponent } from '../control.component';
   templateUrl: './radio-button-control.component.html',
 })
 export class RadioButtonControlComponent extends ControlComponent {
-  get buttons() {
+  get buttons(): any[] {
     return this.field.group as any[];
   }
 }
