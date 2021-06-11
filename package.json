@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "build:prod": "ng build @siren-js/ng && ng test @siren-js/ng --browsers=ChromeHeadless && ng lint @siren-js/ng",
+    "e2e": "ng e2e",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng": "ng",
+    "start": "ng serve -o",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {

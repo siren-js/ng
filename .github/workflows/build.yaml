@@ -1,5 +1,5 @@
 # This workflow will do a clean install of Node dependencies and build the
-# package across different versions of Node.
+# package for production.
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 name: Build Package
@@ -15,7 +15,4 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: npx --package @angular/cli@^11 ng build @siren-js/ng
-      - run: npx --package @angular/cli@^11 ng test @siren-js/ng --browsers=ChromeHeadless
-      - run: npx --package @angular/cli@^11 ng lint @siren-js/ng
-      - run: npx codecov
+      - run: npm run build:prod

@@ -17,7 +17,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npx --package @angular/cli@^11 ng build
+      - run: npm run build @siren-js/ng
       - run: cd dist/siren-js/ng
       - run: npm publish --access public
         env:
