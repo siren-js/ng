@@ -51,46 +51,11 @@ If you'd like to contribute a change, follow these steps:
 This section helps you get your development environment set up for making code
 changes.
 
-First, you'll want to be sure [Node.js] is installed. You can either download
-and install it directly from Node's website, or you can use a Node version
-manager (recommended for testing on multiple versions of Node). There's [nvm]
-for Mac/Linux and [nvm-windows] for Windows.
+First, be sure you have [Angular 11][ng11] set up locally. Next, `cd` into the
+directory of your cloned fork and run `npm install`. And that's it, you're ready
+to start coding!
 
-[node.js]: https://nodejs.org
-[nvm]: https://github.com/nvm-sh/nvm
-[nvm-windows]: https://github.com/coreybutler/nvm-windows
-
-Next, `cd` into the directory of your cloned fork and run `npm install`.
-
-Now you're ready to start coding! All code lives in the `src` directory, and
-tests for a module live in the `__test__` directory next to it. Here are
-some example commands you can run at the root of the project:
-
-```sh
-# format files with Prettier
-$ npm run format
-
-# lint with ESLint
-$ npm run lint
-# automatically fix lint issues where possible
-$ npm run lint:fix
-
-# test with Jest
-# run tests in Node
-$ npm run test:node
-# run tests in the browser
-$ npm run test:jsdom
-# run tests in both environments
-$ npm test
-# run tests as you make changes
-$ npm run test:node -- --watch
-
-# compile TypeScript
-$ npm run compile
-
-# build (compile, lint, test) the project
-$ npm run build
-```
+[ng11]: https://v11.angular.io/guide/setup-local
 
 This project uses [SemVer](https://semver.org/). When making code changes, be
 sure to increment the version accordingly with the
