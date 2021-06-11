@@ -53,7 +53,7 @@ function selectFormControl(field: Field): FormControl {
       field.options.forEach((option, index) => {
         option.selected = Array.isArray(value)
           ? value.includes(index)
-          : index === Number.parseInt(value);
+          : index === Number.parseInt(value, 10);
       });
     }
   });
