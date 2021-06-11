@@ -25,7 +25,7 @@ You will likely also want to install the [Siren.js client][client] for
 npm install @siren-js/client
 ```
 
-## Dyanmic Forms
+## Dynamic Forms
 
 The `actionToFormGroup()` and `fieldToFormControl()` utility functions allow for
 easily building [dynamic forms][dynamic-form] from `Action`s and `Field`s from
