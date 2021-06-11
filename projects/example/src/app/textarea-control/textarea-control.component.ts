@@ -5,5 +5,4 @@ import { ControlComponent } from '../control.component';
   selector: 'app-textarea-control',
   templateUrl: './textarea-control.component.html',
 })
-export class TextareaControlComponent extends ControlComponent {
-}
+export class TextareaControlComponent extends ControlComponent {}

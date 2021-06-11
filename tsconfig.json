@@ -3,10 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@siren-js/ng": [
-        "dist/siren-js/ng/siren-js-ng",
-        "dist/siren-js/ng"
-      ]
+      "@siren-js/ng": ["dist/siren-js/ng/siren-js-ng", "dist/siren-js/ng"]
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -22,10 +19,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

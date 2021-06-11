@@ -9,7 +9,7 @@ describe('fieldToFormControl()', () => {
       new Field('phone', { type: 'tel', value: '+44 7700 900077' }),
       new Field('website', {
         type: 'url',
-        value: 'https://harrypotter.fandom.com/wiki/Harry_Potter'
+        value: 'https://harrypotter.fandom.com/wiki/Harry_Potter',
       }),
       new Field('email', { type: 'email', value: 'harry@potter.uk' }),
       new Field('password', { type: 'password', value: 'v0ldemort$tinks' }),
@@ -19,12 +19,12 @@ describe('fieldToFormControl()', () => {
       new Field('birthTime', { type: 'time', value: '12:34:56.789' }),
       new Field('birthDateTime', {
         type: 'datetime-local',
-        value: '1980-07-31T12:34:56.789'
+        value: '1980-07-31T12:34:56.789',
       }),
       new Field('age', { type: 'number', value: 40 }),
       new Field('favoriteNumber', { type: 'range', value: 69 }),
       new Field('favoriteColor', { type: 'color', value: '#740001' }),
-      new Field('bio', { type: 'textarea', value: 'foo bar baz' })
+      new Field('bio', { type: 'textarea', value: 'foo bar baz' }),
     ];
 
     it('should use value property as state', () => {
@@ -54,7 +54,7 @@ describe('fieldToFormControl()', () => {
   describe('checkbox fields', () => {
     const fields = [
       new Field('wizard', { type: 'checkbox' }),
-      new Field('witch', { type: 'checkbox', checked: true })
+      new Field('witch', { type: 'checkbox', checked: true }),
     ];
 
     it('should use checkedness as state', () => {
@@ -87,7 +87,7 @@ describe('fieldToFormControl()', () => {
       const field = new Field('wizard', {
         type: 'checkbox',
         required: true,
-        disabled: true
+        disabled: true,
       });
 
       const control = fieldToFormControl(field);
@@ -105,8 +105,8 @@ describe('fieldToFormControl()', () => {
           { title: 'Gryffindor', value: 'gryffindor', checked: true },
           { title: 'Hufflepuff', value: 'hufflepuff' },
           { title: 'Ravenclaw', value: 'ravenclaw' },
-          { title: 'Slytherin', value: 'slytherin' }
-        ]
+          { title: 'Slytherin', value: 'slytherin' },
+        ],
       });
 
       const control = fieldToFormControl(field);
@@ -121,8 +121,8 @@ describe('fieldToFormControl()', () => {
           { title: 'Gryffindor', value: 'gryffindor' },
           { title: 'Hufflepuff', value: 'hufflepuff' },
           { title: 'Ravenclaw', value: 'ravenclaw' },
-          { title: 'Slytherin', value: 'slytherin' }
-        ]
+          { title: 'Slytherin', value: 'slytherin' },
+        ],
       });
 
       const control = fieldToFormControl(field);
@@ -135,11 +135,11 @@ describe('fieldToFormControl()', () => {
         { title: 'Gryffindor', value: 'gryffindor', checked: true },
         { title: 'Hufflepuff', value: 'hufflepuff' },
         { title: 'Ravenclaw', value: 'ravenclaw' },
-        { title: 'Slytherin', value: 'slytherin' }
+        { title: 'Slytherin', value: 'slytherin' },
       ];
       const field = new Field('hogwartsHouse', {
         type: 'radio',
-        group: buttons
+        group: buttons,
       });
       const control = fieldToFormControl(field);
 
@@ -168,7 +168,7 @@ describe('fieldToFormControl()', () => {
     it('should ignore invalid radio field extension', () => {
       const field = new Field('hogwartsHouse', {
         type: 'radio',
-        group: {}
+        group: {},
       });
 
       const control = fieldToFormControl(field);
@@ -190,8 +190,8 @@ describe('fieldToFormControl()', () => {
             { title: 'Half-blood', value: 'half-blood', selected: true },
             { title: 'Pure-blood', value: 'pure-blood' },
             { title: 'Squib', value: 'squib' },
-            { title: 'Half-breed', value: 'half-breed' }
-          ]
+            { title: 'Half-breed', value: 'half-breed' },
+          ],
         });
 
         const control = fieldToFormControl(field);
@@ -207,8 +207,8 @@ describe('fieldToFormControl()', () => {
             { title: 'Half-blood', value: 'half-blood' },
             { title: 'Pure-blood', value: 'pure-blood' },
             { title: 'Squib', value: 'squib' },
-            { title: 'Half-breed', value: 'half-breed' }
-          ]
+            { title: 'Half-breed', value: 'half-breed' },
+          ],
         });
 
         const control = fieldToFormControl(field);
@@ -222,7 +222,7 @@ describe('fieldToFormControl()', () => {
           { title: 'Half-blood', value: 'half-blood' },
           { title: 'Pure-blood', value: 'pure-blood' },
           { title: 'Squib', value: 'squib' },
-          { title: 'Half-breed', value: 'half-breed' }
+          { title: 'Half-breed', value: 'half-breed' },
         ];
         const field = new Field('bloodStatus', { type: 'select', options });
         const control = fieldToFormControl(field);
@@ -253,8 +253,8 @@ describe('fieldToFormControl()', () => {
             { title: 'Half-blood', value: 'half-blood', selected: true },
             { title: 'Pure-blood', value: 'pure-blood' },
             { title: 'Squib', value: 'squib' },
-            { title: 'Half-breed', value: 'half-breed', selected: true }
-          ]
+            { title: 'Half-breed', value: 'half-breed', selected: true },
+          ],
         });
 
         const control = fieldToFormControl(field);
@@ -271,8 +271,8 @@ describe('fieldToFormControl()', () => {
             { title: 'Half-blood', value: 'half-blood' },
             { title: 'Pure-blood', value: 'pure-blood' },
             { title: 'Squib', value: 'squib' },
-            { title: 'Half-breed', value: 'half-breed' }
-          ]
+            { title: 'Half-breed', value: 'half-breed' },
+          ],
         });
 
         const control = fieldToFormControl(field);
@@ -286,12 +286,12 @@ describe('fieldToFormControl()', () => {
           { title: 'Half-blood', value: 'half-blood' },
           { title: 'Pure-blood', value: 'pure-blood' },
           { title: 'Squib', value: 'squib' },
-          { title: 'Half-breed', value: 'half-breed' }
+          { title: 'Half-breed', value: 'half-breed' },
         ];
         const field = new Field('bloodStatus', {
           type: 'select',
           multiple: true,
-          options
+          options,
         });
         const control = fieldToFormControl(field);
 
@@ -321,7 +321,7 @@ describe('fieldToFormControl()', () => {
     it('should ignore invalid select field extension', () => {
       const field = new Field('hogwartsHouse', {
         type: 'select',
-        options: {}
+        options: {},
       });
 
       const control = fieldToFormControl(field);

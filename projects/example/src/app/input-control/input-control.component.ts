@@ -5,5 +5,4 @@ import { ControlComponent } from '../control.component';
   selector: 'app-input-control',
   templateUrl: './input-control.component.html',
 })
-export class InputControlComponent extends ControlComponent {
-}
+export class InputControlComponent extends ControlComponent {}

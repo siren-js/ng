@@ -5,5 +5,4 @@ import { ControlComponent } from '../control.component';
   selector: 'app-file-upload-control',
   templateUrl: './file-upload-control.component.html',
 })
-export class FileUploadControlComponent extends ControlComponent {
-}
+export class FileUploadControlComponent extends ControlComponent {}

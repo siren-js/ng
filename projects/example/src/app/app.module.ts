@@ -23,14 +23,10 @@ import { InputControlComponent } from './input-control/input-control.component';
     RadioButtonControlComponent,
     SelectControlComponent,
     TextareaControlComponent,
-    InputControlComponent
+    InputControlComponent,
   ],
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    SireNgModule
-  ],
+  imports: [BrowserModule, ReactiveFormsModule, SireNgModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
