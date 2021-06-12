@@ -18,7 +18,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm run build @siren-js/ng
-      - run: cd dist/siren-js/ng
-      - run: npm publish --access public
+      - working-directory: ./dist/siren-js/ng
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
