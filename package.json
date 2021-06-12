@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "ng build",
-    "build:prod": "ng build @siren-js/ng && ng test @siren-js/ng --no-watch --browsers=ChromeHeadless && ng lint @siren-js/ng",
+    "build:ci": "ng build @siren-js/ng --prod && ng test @siren-js/ng --no-watch --browsers=ChromeHeadless && ng lint @siren-js/ng",
+    "build:prod": "ng build --prod",
     "e2e": "ng e2e",
     "lint": "ng lint",
     "ng": "ng",
