@@ -10,7 +10,7 @@ import { actionToFormGroup } from '@siren-js/ng';
 export class ActionFormComponent implements OnInit {
   @Input() action!: Action;
   formGroup!: FormGroup;
-  @Output() submit = new EventEmitter<Action>();
+  @Output() submitAction = new EventEmitter<Action>();
 
   get fields(): readonly Field[] {
     return this.action.fields ?? [];
@@ -22,7 +22,7 @@ export class ActionFormComponent implements OnInit {
 
   onSubmit(): void {
     if (this.formGroup.valid) {
-      this.submit.emit(this.action);
+      this.submitAction.emit(this.action);
     }
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import SirenClient from '@siren-js/client';
+import SirenClient, { ClientResponse } from '@siren-js/client';
 import { Action, Entity } from '@siren-js/core';
 
 @Component({
@@ -15,7 +15,15 @@ export class AppComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<void> {
-    const response = await this.client.fetch('http://localhost:3001');
+    this.navigate(() => this.client.fetch('http://localhost:3001'));
+  }
+
+  async onSubmit(action: Action) {
+    this.navigate(() => this.client.submit(action));
+  }
+
+  private async navigate(go: () => Promise<ClientResponse>) {
+    const response = await go();
     this.entity = await response.siren();
   }
 }
