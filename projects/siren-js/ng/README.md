@@ -1,5 +1,11 @@
 # `@siren-js/ng`
 
+[![Node Package](https://img.shields.io/npm/v/@siren-js/ng)](https://npmjs.org/@siren-js/ng)
+[![Build Status](https://img.shields.io/github/workflow/status/siren-js/ng/Build%20Package)](https://github.com/siren-js/ng/actions/workflows/build.yaml)
+[![Code Coverage](https://img.shields.io/codecov/c/github/siren-js/ng)](https://codecov.io/gh/siren-js/ng)
+[![License](https://img.shields.io/github/license/siren-js/ng)](../../../LICENSE)
+[![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](../../../CONTRIBUTING.md)
+
 Library for working with [Siren] in Angular, primarily building
 [dynamic forms][dynamic-form] backed by Siren [actions].
 
