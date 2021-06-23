@@ -10,6 +10,14 @@ The format is based on [Keep a Changelog][kac], and this project adheres to
 
 ## Unreleased
 
+## 0.1.1
+
+### Fixed
+
+- [#2] - Lowering Angular peer dependency requirements
+
+[#2]: https://github.com/siren-js/ng/issues/2
+
 ## 0.1.0 - 2021-06-12
 
 ### Added
