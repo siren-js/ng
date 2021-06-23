@@ -2,6 +2,25 @@
   "name": "@siren-js/ng",
   "description": "Utilities for working with Siren in Angular",
   "version": "0.1.1",
+  "author": "Siren.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siren-js/ng.git"
+  },
+  "homepage": "https://github.com/siren-js/ng/tree/main/projects/siren-js/ng#readme",
+  "bugs": {
+    "url": "https://github.com/siren-js/ng/issues"
+  },
+  "keywords": [
+    "Angular",
+    "API",
+    "HATEOAS",
+    "hypermedia",
+    "REST",
+    "RESTful",
+    "Siren"
+  ],
   "peerDependencies": {
     "@angular/common": ">=2",
     "@angular/core": ">=2",
